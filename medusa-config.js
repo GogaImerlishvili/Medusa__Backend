@@ -52,6 +52,7 @@ const plugins = [
   //     webhook_secret: STRIPE_WEBHOOK_SECRET,
   //   },
   // },
+<<<<<<< HEAD
   {
     resolve: `medusa-file-minio`,
     options: {
@@ -61,6 +62,18 @@ const plugins = [
       secret_access_key: process.env.MINIO_SECRET_KEY,
     },
   },
+=======
+
+{
+    resolve: `medusa-file-minio`,
+    options: {
+        endpoint: process.env.MINIO_ENDPOINT,
+        bucket: process.env.MINIO_BUCKET,
+        access_key_id: process.env.MINIO_ACCESS_KEY,
+        secret_access_key: process.env.MINIO_SECRET_KEY,
+    },
+},
+>>>>>>> 668b081208c22264f34d74e3d0d41bc2a4b04d45
 ];
 
 module.exports = {
