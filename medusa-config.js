@@ -77,7 +77,6 @@ const plugins = [
       },
     },
   },
-
   {
     resolve: `medusa-file-minio`,
     options: {
